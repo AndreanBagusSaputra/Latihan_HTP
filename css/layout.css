@@ -1,0 +1,58 @@
+/*Universal CSS*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1{
+    color: white;
+}
+
+.nav{
+    text-decoration: none;
+    background-color: blueviolet;
+}
+
+.nav a{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.col1{
+    float: left;
+    padding: 10px;
+}
+
+.col1.side{
+    width: 25%;
+}
+
+.col1.middle{
+    width: 50%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.foter{
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
