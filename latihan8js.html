@@ -1,0 +1,61 @@
+<script>
+
+    // Jika tidak menggunakan looping
+    document.write('Bilangan 1 ' + 'Bilangan 2 ' + 'Bilangan 3');
+    document.write('<br> Cetak bilangan dari 1 sampai 50');
+
+    //Contoh perulangan menggunakan operator increment
+    let angka;
+    for(angka = 1; angka <= 50; angka ++){
+        document.write('<br> Bilangan ' + angka);
+    }
+
+    // Contoh perulangan menggunakan operator decrement
+    var bil;
+    for(bil = 50; bil >= 1; bil --){
+        document.write('<br> <hr> Bilangan ' + bil);
+    }
+
+    // Mencetak bilangan ganjil
+    // % modulus adalah sisa bagi 
+    document.write('<hr> Mencetak Bilangan ganjil');
+    let ganjil;
+    for(ganjil = 1; ganjil <= 20; ganjil++ ){
+        if(ganjil % 2 == 1){
+            document.write('<br> Bilangan hanjil : ' + ganjil);
+        }
+    }
+
+    // Coba ganjil 2
+    let ganjil2;
+    for(ganjil2 < 1; ganjil2 <= 20; ganjil2 += 2){
+        document.write('<hr> Bilangan ganjil 2: ' + ganjil2);
+    }
+
+    // Perulangan menggunakan while
+    document.write('<hr> ----- Cetak bilangan 1 sampai 30 -----');
+    let angka2 = 1;
+    while(angka2 <= 30){
+        document.write('<br> Bilangan : ' + angka2);
+        angka2 ++;
+    }
+
+    // Bilangan Prima
+
+    document.write('<hr> Bilangan Prima')
+
+    let i;
+    let j;
+
+    for(i = 1; i <= 50 ; i ++){
+        let prim = 0;
+        for(j = 1; j <= i; j ++){
+            if(i % j == 0){
+                prim ++;
+            }
+        } 
+        if(prim == 2){
+            document.write('<br> Bilangan Prima : ' + i);
+        }
+    }
+</script>
