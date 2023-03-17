@@ -12,7 +12,7 @@ function kurang(){
     var a2 = parseFloat(frm.angka2.value);
     var total = a1 - a2;
     frm.hasil.value = total;
-}
+} 
 
 function kali(){
     var frm = document.getElementById('kalkulator');

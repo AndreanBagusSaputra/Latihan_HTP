@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Jquery</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <h3 id="call">Selamat Belajar JQuery</h3>
+    <h2 class="call2">Selamat Belajar JQuery dengan memangil dengan selecector class</h2>
+    <p>Teks nya ko gaada hilang</p>
+    <input type="submit" value="salam">
+    
+    <script> 
+    $( document ).ready(function() {
+        // Pembuatan jquery dengan pemangilan selector tag
+        $("input").click(function(){
+            alert("Selamat Belajar Jquery");
+        })
+        // Pembuatan Jquery dengan memangil selector id
+        $("#call").css("background-color", "orange");
+        // Pembuatan Jquery dengan memangil selector class
+        $(".call2").css("color", "blue");
+        // Menggunakan efect
+        $("p").hide(1000);
+        $("p").slideDown(500);
+    });
+    </script>
+    
+</body>
+</html>
